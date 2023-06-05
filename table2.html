@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/48d3414e98.js" crossorigin="anonymous"></script>
+<title>Table</title>
+</head>
+
+<style>
+    body {
+        padding: 0px;
+        margin: 0;
+    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    table {
+        position: absolute;
+        left: 50%;
+        top: 110%;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        width: 800px;
+        height: 200px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #header {
+        background-color: #16a085;
+        color: #deecb8;
+    }
+    
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #16a085;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media only screen and (max-width: 768px) 
+    {
+        table {
+            width: 90%;
+        }
+    }
+@media screen and (max-width: 600px) {
+  table {
+   margin-top:110%;
+    border: 20px;
+   top:190%;
+  }
+
+  table caption {
+    font-size: 1.3em;
+ margin-bottom:20px;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr,th {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    text-align:center;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 15px;;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr((data-label));
+    
+   float:left;
+    font-weight: bold;
+   font-size:15px;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+ td:nth-of-type(1):before { content: "s.no:   " ; }
+  td:nth-of-type(2):before { content: "topic:   "; }
+  td:nth-of-type(3):before { content: "area:   "; }
+}
+</style>
+
+<body>
+<div.
+ <div class="h" style=margin-top:5%;margin-left:2%; margin-bottom:5%;><a href="index.html"><i class="fas fa-home fa-4x" ></i></a></div> 
+<div>
+<table>
+<caption style=text-align:center;font-size:1.3em;>Logical Reasoning</caption>
+        <tr >
+            <th>S.NO</th>
+            <th>TOPIC</th>
+            <th>AREA</th>
+      </tr>
+       
+     <tr>
+            <td>1 </td>
+            <td>Series Completion:Number Series,Alphabet Series,Alpha-Numeric Series</td>
+            <td>General Mental Ability</td>
+        </tr>
+         <tr>
+            <td>2 </td>
+            <td>Analogy: Completing the Analogous Pair,Simple Analogy,Choosing the Analogous Pair,Double Analogy,and Number Analogy</td>
+            <td>General Mental Ability</td>
+        </tr>
+         <tr>
+            <td>3 </td>
+            <td>Classification/Odd One Out:Word Classification,Number Classification and Letter Classification</td>
+            <td>General Mental Ability</td>
+        </tr>
+          <tr>
+            <td>4</td>
+            <td>Coding-Decoding:Letter Coding,Number Coding,Matrix Coding,Substitution,Deciphering Message Word Codes,Jumbled Coding</td>
+            <td>General Mental Ability</td>
+        </tr>
+          <tr>
+            <td>5</td>
+            <td>Blood Relations,Deciphering Jumbled Up Descriptions</td>
+            <td>General Mental Ability</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Direction sense test</td>
+            <td>General Mental Ability</td>
+        </tr>
+          <tr>
+            <td>7 </td>
+            <td>Number,Ranking& Time Sequence Test</td>
+            <td>General Mental Ability</td>
+        </tr>
+          <tr>
+            <td>8 </td>
+            <td>Puzzle Test:Classification type Questions</td>
+            <td>Analytical Reasoning</td>
+        </tr>
+       <tr>
+            <td>9 </td>
+            <td>Seating Arrangements Comparsion Type Questions,Sequential Order Of Things,Selection Based on gave conditions,Family-Based Puzzles,Jumbled Problems</td>
+           <td>Analytical Reasoning</td>
+        </tr>
+          <tr>
+            <td>10 </td>
+            <td>Assertions and Reason</td>
+            <td>  Logical Reasoning</td>
+        
+        </tr>  
+          <tr>
+            <td>11</td>
+            <td>Logical Venn Diagrams</td>
+            <td>Logical Reasoning</td>
+        </tr>
+          <tr>
+            <td>12</td>
+            <td>Alpha Numeric Sequence Puzzle</td>
+            <td>Analytical Reasoning</td>
+        </tr>
+             <tr>
+            <td>13</td>
+            <td>Cubes</td>
+            <td>General Mental Ability</td>
+        </tr>
+    <tr>
+            <td>14</td>
+            <td>Dices</td>
+            <td>General Mental Ability</td>
+        </tr>
+          <tr>
+            <td>15</td>
+            <td>Inequalities</td>
+            <td>Analytical Reasoning</td>
+        </tr>
+      <tr>
+            <td>16 </td>
+            <td>Logical Deduction :Logic ,Statement-Arguments</td>
+            <td>Logical Reasoning</td>
+        </tr>
+  <tr>
+            <td>17 </td>
+            <td>Clocks</td>
+            <td>General Mental Ability</td>
+        </tr>
+     <tr>
+            <td>18</td>
+            <td>Calender</td>
+            <td>General Mental Ability</td>
+        </tr>
+   <tr>
+            <td>19 </td>
+            <td>Data Sufficinecy</td>
+            <td>Logical Reasoning</td>
+        </tr>
+     <tr>
+            <td>20 </td>
+            <td>Syllogism</td>
+            <td>Logical Reasoning</td>
+        </tr>
+
+    </table>
+    </div>
+</div>
+</body>
+
+</html>

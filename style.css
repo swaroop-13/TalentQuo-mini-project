@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  height: 100vh;
+  justify-content: center;
+text-align:justify;
+  }
+ .top{                                                                                    
+display:flex;
+margin-top:10px;
+font-size:20px;
+}  
+.one
+{           padding:10px;
+             width:10%;
+                            
+}
+.mainhead{
+margin-left:-60px;
+width:70%;
+height:30%;
+text-align:center;
+
+}
+
+.head{
+width:100%;
+height:50px;
+margin-bottom:5%;
+margin-top:5%;
+text-align:center;
+background-color:green;
+}
+.h
+{
+margin-top:3%;
+margin-left:2%;
+}
+.crt{
+width:100%;
+height:50px;
+text-align:center;
+margin-top:50px;
+}
+.img-slider{
+  position: relative;
+  width: 600px;
+  height: 380px;
+  border-spacing: 100px 50px;
+  background: #1D212B;
+margin-left:30%;
+}
+
+.img-slider .slide{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+.img-slider .slide img{
+  z-index: 1;
+  width: 100%;
+
+  border-radius: 5px;
+}
+
+.img-slider .slide .info{
+  position: relative;
+  top: 70%;
+text-align:center;
+  padding: 10px 20px;
+margin-bottom:5%;
+}
+
+.img-slider .slide .info h2{
+text-align:center;
+  color: red;
+
+  font-size: 20px;
+ 
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.img-slider .slide .info p{
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.img-slider .navigation{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+  background: rgba(255, 255, 255, 0.5);
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.img-slider .navigation .btn.active{
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 820px){
+  .img-slider{
+    width: 600px;
+    height: 375px;
+    margin-left:5%;
+  }
+
+
+  .img-slider .slide .info{
+    padding: 10px 25px;
+
+  }
+
+  .img-slider .slide .info h2{
+    font-size: 20px;
+margin-bottom:2%;
+  }
+
+  .img-slider .slide .info p{
+    width: 70%;
+    font-size: 15px;
+  }
+
+  .img-slider .navigation{
+    bottom: 25px;
+  }
+
+  .img-slider .navigation .btn{
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 620px){
+  .img-slider{
+    width: 400px;
+    height: 250px;
+   margin-left:5%;
+  }
+
+
+  .img-slider .slide .info{
+    padding: 10px 20px;
+ 
+  }
+
+  .img-slider .slide .info h2{
+    font-size: 20px;
+margin-bottom:2%;
+  }
+
+  .img-slider .slide .info p{
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .img-slider .navigation{
+    bottom: 15px;
+  }
+
+  .img-slider .navigation .btn{
+    width: 8px;
+    height: 8px;
+    margin: 6px;
+  }
+}
+
+@media (max-width: 420px){
+  .img-slider{
+    width: 320px;
+    height: 200px;
+    margin-left:5%;
+  }
+
+  .img-slider .slide .info{
+    padding: 5px 10px;
+ 
+  }
+
+
+  .img-slider .slide .info h2{
+    font-size: 10px;
+margin-bottom:2%;
+  }
+
+  .img-slider .slide .info p{
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .img-slider .navigation{
+    bottom: 10px;
+  }
+}
+table {
+        position: relative;
+       margin-top:50px;
+       margin-bottom:-400px;
+       margin-left:10%;
+       width: 50%;
+        height: 50%;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    tr {
+        transition: all .1s ease-in;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #header {
+        background-color: transparent;
+        color: #deecb8;
+    }
+    
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: transparent;
+        color: #7fff00;
+        padding: 10px 0px;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media only screen and (max-width: 490px) {
+        table {
+            width: 90%;
+            margin-left:2%;
+        }
+    }
+nav {
+margin-top:100px;
+  --duration: .5s;
+  --easing: ease-in-out;
+  position: relative;
+  width: 290px;
+  margin: 20px;
+}
+nav ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: -4px 0 0 0;
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  background: #deecb8;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 5px;
+  padding: 1em 1.52em;
+}
+nav a:hover {
+  background: white;
+}
+nav .sub-menu a {
+  font-size: 1em;
+  color: #deecb8;
+  border-left: 2em solid white;
+  padding: .75em;
+  background: linear-gradient(to right, #dddddd 2px, #ffffff 2px);
+}
+nav .sub-menu a:hove
+  background: linear-gradient(to right, #dddddd 2px, #ffffff 2px);
+}
+nav header {
+  font-weight: 600;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing), color var(--duration) var(--easing);
+  transition-delay: var(--delay-out);
+  border-radius: 4px;
+  padding: 1em 1.52em;
+}
+nav header span {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  padding: 0;
+  cursor: pointer;
+  line-height: 1;
+  float: right;
+}
+nav footer button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: calc(1em - 2px);
+  width: 100%;
+  transform-origin: 0 0;
+  transition: transform var(--duration) var(--easing);
+  transition-delay: calc(var(--duration) + (.1s * (var(--count) / 2)));
+  cursor: pointer;
+  outline: none;
+  background: #cdcdcd;
+  opacity: 0;
+}
+nav.closed a,
+nav.closed header {
+  transform: translateY(calc(var(--top) * -1)) scaleY(0.1) scaleX(0.2);
+  transition-delay: var(--delay-in);
+  color: transparent;
+}
+nav.closed footer button {
+  transition-delay: 0s;
+  transform: scaleY(0.7) scaleX(0.2);
+}

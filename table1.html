@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/48d3414e98.js" crossorigin="anonymous"></script>
+<title>Table</title>
+</head>
+
+<style>
+    body {
+        padding: 0px;
+        margin: 0;
+     
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    table {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%, -50%);
+        border-collapse: collapse;
+        width: 800px;
+        height: 200px;
+        border: 1px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+    }
+    
+    th,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    #header {
+        background-color: #16a085;
+        color: #deecb8;
+    }
+    
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #16a085;
+        color: #fff;
+        padding: 10px 0px;
+    }
+    
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    @media only screen and (max-width: 768px) 
+    {
+        table {
+            width: 90%;
+        }
+    }
+@media screen and (max-width: 600px) {
+  table {
+   margin-top:100%;
+    border: 20px;
+   top:150%;
+  }
+
+  table caption {
+    font-size: 1.3em;
+ margin-bottom:20px;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr,th {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    text-align:center;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 15px;;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr((data-label));
+    
+   float:left;
+    font-weight: bold;
+   font-size:15px;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+ td:nth-of-type(1):before { content: "s.no:   " ; }
+  td:nth-of-type(2):before { content: "topic:   "; }
+  td:nth-of-type(3):before { content: "area:   "; }
+}
+</style>
+
+<body>
+<div.
+ <div class="h" style=margin-top:5%;margin-left:2%; margin-bottom:5%;><a href="index.html"><i class="fas fa-home fa-4x" ></i></a></div> 
+<div>
+<table>
+<caption style=text-align:center;font-size:1.3em;>VERBAL ABILITY</caption>
+    <br>
+    <br>
+        <tr >
+            <th>S.NO</th>
+            <th>TOPIC</th>
+            <th>AREA</th>
+      </tr>
+       
+    <tr>
+            <td>1 </td>
+            <td>SENTENCE STRUCTURE AND  COMPONENTS</td>
+            <td>Grammer</td>
+        </tr>
+         <tr>
+            <td>2 </td>
+            <td>NOUNS</td>
+            <td>Grammer</td>
+        </tr>
+         <tr>
+            <td>3 </td>
+            <td>VERB-SVA</td>
+            <td>Grammer</td>
+        </tr>
+          <tr>
+            <td>4</td>
+            <td>VERB-TENSE</td>
+            <td>Grammer</td>
+        </tr>
+          <tr>
+            <td>5</td>
+            <td>ARTICLES</td>
+            <td>Grammer</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>PREPOSITIONS AND CONJUCTIONS</td>
+            <td>Grammer</td>
+        </tr>
+          <tr>
+            <td>7 </td>
+            <td>ADJECTIVES</td>
+            <td>Grammer</td>
+        </tr>
+          <tr>
+            <td>8 </td>
+            <td>SYNTHESIS OF SENTENCES</td>
+            <td>Grammer</td>
+        </tr>
+       <tr>
+            <td>9 </td>
+            <td>ERRORS,CORRECTIONS AND IMPROVEMENTS</td>
+            <td>Grammer</td>
+        </tr>
+          <tr>
+            <td>10 </td>
+            <td>SYSNONYMS & ANTONYMS</td>
+            <td>  Vocabulary</td>
+        
+        </tr>  
+          <tr>
+            <td>11</td>
+            <td>SPELLINGS & CONFUSABLE WORDS</td>
+            <td>Vocabulary</td>
+        </tr>
+          <tr>
+            <td>12</td>
+            <td>IDIOMS & PHRASES AND PHRASAL VERBS</td>
+            <td>Vocabulary</td>
+        </tr>
+             <tr>
+            <td>13</td>
+            <td>ONE WORD SUBSTITUES</td>
+            <td>Vocabulary</td>
+        </tr>
+    <tr>
+            <td>14</td>
+            <td>SENTENCE COMPLETION</td>
+            <td>Vocabulary</td>
+        </tr>
+          <tr>
+            <td>15</td>
+            <td>ODD MAN OUT & ANALOGIES</td>
+            <td>Vocabulary</td>
+        </tr>
+      <tr>
+            <td>16 </td>
+            <td>CLOZE TEST</td>
+            <td>Comprehension</td>
+        </tr>
+  <tr>
+            <td>17 </td>
+            <td>READING COMPREHENSION</td>
+            <td>Comprehension</td>
+        </tr>
+     <tr>
+            <td>18</td>
+            <td>BASIC MECHANICS OF WRITING</td>
+            <td>Writing</td>
+        </tr>
+   <tr>
+            <td>19 </td>
+            <td>SENTENCE ORDERING</td>
+            <td>Writing</td>
+        </tr>
+     <tr>
+            <td>20 </td>
+            <td>PASSAGE ORERING</td>
+            <td>Writing</td>
+        </tr>
+
+    </table>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<div class="crt">
+ <div>WHY CRT AT TALENTQUO</div>
+  <ol  type="a">
+ <li>Comprehensive Training </li>
+ <li>More than 100 hours of Training</li>
+ <li>Company Specific Training</li>
+ <li>Updated Material</li>
+ <li>Covering Topics with latest MNC Questions</li>
+ <li>Online Test Series</li>
+ <li>Detailed Test Analysis</li>
+ <li>Expert Trainers</li>
+<li>Flexible Schedules</li>
+ <li>Basic to Advance Level</li>
+<li>Individual doubt Solving</li>
+<li>Mock Group Discussions</li>
+<li>Mock HR interviews</li>
+<li>Resume Preparation</li>
+<li>Soft skills training</li>
+</ol></div>

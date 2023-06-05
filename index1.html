@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider | Autoplay With Navigation Visibility</title>
+<script src="https://kit.fontawesome.com/48d3414e98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="h" ><a href="index.html"><i class="fas fa-home fa-4x" style:position:relative; ></i></a></div>
+<div class="head"><h1>WHAT WE OFFER</h1></div>
+
+<div>
+   <div class="img-slider">
+      <div class="slide active">
+        <img src="Picture1.png" alt="">
+        <div class="info">
+          <h2>Comprehensive Training</h2>
+       
+        </div>
+      </div>
+      <div class="slide">
+        <img src="2.png" alt="">
+        <div class="info">
+          <h2>Expert Trainers</h2>
+          
+        </div>
+      </div>
+      <div class="slide">
+        <img src="3.png" alt="">
+        <div class="info">
+          <h2>Flexible Schedules</h2>
+       
+        </div>
+      </div>
+      <div class="slide">
+        <img src="4.png" alt="">
+        <div class="info">
+          <h2>Company Specfic Training</h2>
+         
+        </div>
+      </div>
+      
+<div class="slide">
+        <img src="5.png" alt="">
+        <div class="info">
+          <h2>100+ hours of training</h2>
+         
+        </div>
+      </div>
+<div class="slide">
+        <img src="6.png" alt="">
+        <div class="info">
+          <h2>Basic to Adavance Level</h2>
+         
+        </div>
+      </div>
+    <div class="slide">
+        <img src="7.png" alt="">
+        <div class="info">
+          <h2>Online Test Series</h2>
+          
+        </div>
+      </div>
+<div class="slide">
+        <img src="8.png" alt="">
+        <div class="info">
+          <h2>Continous Support</h2>
+          
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="btn active"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+       <div class="btn"></div>
+       <div class="btn"></div>
+       <div class="btn"></div>
+      </div>
+    </div>
+
+<div style=margin-top:10%;margin-left:5%;margin-right:5%;text-align:justify;>
+<h3>Campus Recruitment Training by TalentQuo is a focused and dedicated training program for the students who 
+are going to face the campus recruitment drive in their college</h3>
+<h3 style="margin-top:10px"; >After an extensive research and interaction with HR and Technical / Managerial recruiters, the campus recruitment train
+ing program is designed to impart quality training. This will provide a strong platform for the students in securing jobs in multinational companies.</h3>
+<h3 style="margin-top:10px";>alentQuo has a comprehensive program designed to train students for all the stages of the campus recruitment p
+rocess done at various colleges. The program has different modules for aptitude test, group discussion, and personal interviews. T
+he program is designed to train students in the recruitment process which helps them secure a good job in a good company.</h3>
+<h3 style="margin-top:10px";>We have a team of best faculty and the teaching methodology is completely unique with the updated
+ content with more logics that help the students solve the problems in an easier way.</h3>
+</div>
+<div>
+  <div class="crt"><h1>WHY CRT AT TALENTQUO?</h1></div>
+  <div> 
+     <table>
+        <tr id="header">
+            <th>S.NO</th>
+            <th>TOPIC</th>
+          </tr>
+           <tr >
+            <td>1</td>
+            <td>Company Specific Training</td>
+          </tr>
+             <tr >
+            <td>2</td>
+            <td>Updated Material</td>
+          </tr>
+          <tr >
+            <td>3</td>
+            <td>Covering Topics with latest MNC Questions</td>
+          </tr>
+             <tr >
+            <td>4</td>
+            <td>Online Test Series</td>
+          </tr>
+           <tr >
+            <td>5</td>
+            <td>Detailed Test Analysis</td>
+          </tr>
+             <tr >
+            <td>6</td>
+            <td>Expert Trainers</td>
+          </tr>
+            <tr >
+            <td>7</td>
+            <td>Flexible Schedules</td>
+          </tr>
+          <tr >
+            <td>8</td>
+            <td>Basic to Advance Level</td>
+          </tr>
+          <tr >
+            <td>9</td>
+            <td>Individual doubt Solving</td>
+          </tr>
+            <tr >
+            <td>10</td>
+            <td>Mock Group Discussions</td>
+          </tr>
+          <tr >
+            <td>11</td>
+            <td>Mock HR interviews</td>
+          </tr>
+                <tr >
+            <td>12</td>
+            <td>Resume Preparation</td>
+          </tr>
+            <tr >
+            <td>13</td>
+            <td>Soft skills training</td>
+          </tr>
+</table>
+</div>
+</div>
+</div>
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 5000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+    
+   var $els = $('.menu a, .menu header');
+var count = $els.length;
+var grouplength = Math.ceil(count/3);
+var groupNumber = 0;
+var i = 1;
+$('.menu').css('--count',count+'');
+$els.each(function(j){
+    if ( i > grouplength ) {
+        groupNumber++;
+        i=1;
+    }
+    $(this).attr('data-group',groupNumber);
+    i++;
+});
+
+$('.menu footer button').on('click',function(e){
+    e.preventDefault();
+    $els.each(function(j){
+        $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
+        $(this).css('--delay-in',j*.1+'s');
+        $(this).css('--delay-out',(count-j)*.1+'s');
+    });
+    $('.menu').toggleClass('closed');
+    e.stopPropagation();
+});
+
+// run animation once at beginning for demo
+setTimeout(function(){
+    $('.menu footer button').click();
+    setTimeout(function(){
+        $('.menu footer button').click();
+    }, (count * 100) + 500 );
+}, 1000);
+ 
+    
+</script>
+  </body>
+</html>
